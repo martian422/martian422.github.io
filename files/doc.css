@@ -290,8 +290,8 @@ table.pub_table,td.pub_td1,td.pub_td2
 padding: 7px;
 /* width: 860px; */
     border-collapse: separate;
-    border-spacing: 15px;
-    margin-top: -5px;
+    border-spacing: 10px;
+    margin-top: -7px;
 }
 
 td.pub_td1
@@ -306,7 +306,7 @@ td.pub_td1 img
 
 td.pub_td2
 {
-width:560px;
+width:650px;
 }
 
 table.pub_table tr {

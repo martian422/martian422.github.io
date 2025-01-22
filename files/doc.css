@@ -301,7 +301,12 @@ width:40px;
 td.pub_td1 img
 {
   /*height:120px;*/
-  width: 210px;
+  width: 200px;
+}
+
+td.pub_td2
+{
+width:510px;
 }
 
 table.pub_table tr {

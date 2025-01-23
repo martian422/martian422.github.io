@@ -1,18 +1,40 @@
 <!DOCTYPE html>
-
 <HTML>
 <HEAD>
   <META content="IE=5.0000" http-equiv="X-UA-Compatible">
-  <META name="description" content="Tianren Ma's home page"> 
+  <META name="description" content="Tianren Ma's Homepage"> 
   <META http-equiv="Content-Type" content="text/html; charset=gb2312">
-  <LINK href="files/doc.css" 
-    rel="stylesheet" type="text/css"> 
-  <TITLE>Tianren Ma 马天任</TITLE> 
+  <LINK href="files/doc.css" rel="stylesheet" type="text/css"> 
+  <TITLE>Tianren Ma's Homepage</TITLE> 
   <META name="GENERATOR" content="MSHTML 11.00.10570.1001">
+  <style>
+    .lang-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 8px 16px;
+      background-color: #4a5568;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .lang-switch:hover {
+      background-color: #2d3748;
+    }
+    .en, .zh {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+  </style>
 </HEAD>
 
-
 <BODY> 
+  <button class="lang-switch" onclick="toggleLanguage()">切换语言 / Switch Language</button>
+
   <DIV id="layout-content" style="margin-top: 20px;">
   <TABLE>
     <TBODY>
@@ -20,11 +42,20 @@
       <TD width="670">
         <DIV id="toptitle">
         <H1>Tianren Ma &nbsp;</H1></DIV>
-        <H3>Ph.D. Candidate</H3>
-        <BR>Learning and Machine Perception Lab (<A href="http://lamp.ucas.ac.cn/">LAMP</A>)
-        <BR>School of Electronic, Electrical and Communication Engineering
-        <BR>University of Chinese Academy of Sciences (<A href="http://english.ucas.ac.cn/">UCAS</A>)
-        <BR>Beijing, China, 100083.
+        <div class="en show">
+          <H3>Ph.D. Candidate</H3>
+          <BR>Learning and Machine Perception Lab (<A href="http://lamp.ucas.ac.cn/">LAMP</A>)
+          <BR>School of Electronic, Electrical and Communication Engineering
+          <BR>University of Chinese Academy of Sciences (<A href="http://english.ucas.ac.cn/">UCAS</A>)
+          <BR>Beijing, China, 100083.
+        </div>
+        <div class="zh">
+          <H3>博士研究生</H3>
+          <BR>学习与机器感知实验室 (<A href="http://lamp.ucas.ac.cn/">LAMP</A>)
+          <BR>电子电气与通信工程学院
+          <BR>中国科学院大学 (<A href="http://ucas.ac.cn/">UCAS</A>)
+          <BR>中国，北京，100083
+        </div>
         <BR>
         <BR> Email:  
         <A href="mailto:matianren18@mails.ucas.ac.cn"> matianren18@mails.ucas.ac.cn</A>; 
@@ -40,24 +71,36 @@
   </TABLE>
 
   <DIV id="layout-content" style="margin-top: 0px;">
-  <H2>My Biography</H2>
+  <div class="en show">
+    <H2>My Biography</H2>
+    <P> I am a Ph.D. candidate of LAMP at UCAS, 
+      advised by <A href="https://scholar.google.com.hk/citations?user=tjEfgsEAAAAJ&hl=zh-CN&oi=ao">Prof. Qixiang Ye</A>.       
+    </P>
+    <P>I got my B.E. degree in UCAS in 2022. During my undergraduate studies, I contributed to the development of remote sensing algorithm for satellites. 
+      My previous works focus on empowering large models to carry out instance-level comprehension.
+    </P>
+    <P>I'm now exploring multimodal model's capability with finer-grained discrete representations.</P>
+  </div>
 
-  <P> I am a Ph.D. candidate of LAMP at UCAS, 
-    advised by <A href="https://scholar.google.com.hk/citations?user=tjEfgsEAAAAJ&hl=zh-CN&oi=ao">Prof. Qixiang Ye</A>.       
-  </P>
+  <div class="zh">
+    <H2>个人简介</H2>
+    <P>我是中国科学院大学LAMP实验室的博士研究生，
+      导师是<A href="https://scholar.google.com.hk/citations?user=tjEfgsEAAAAJ&hl=zh-CN&oi=ao">叶齐祥教授</A>。       
+    </P>
+    <P>我于2022年在中国科学院大学获得工学学士学位。在本科期间，我参与了卫星遥感算法的开发工作。
+      我之前的研究主要关注于增强大模型进行实例级理解的能力。
+    </P>
+    <P>目前，我正在探索多模态模型在细粒度离散表示下的潜力。</P>
+  </div>
 
-  <P>I got my B.E. degree in UCAS in 2022. During my undergraduate studies, I contributed to the development of remote sensing algorithm for satellites. 
-    My previous works focus on empowering large models to carry out instance-level comprehension.
-  </P>
-    
-  <P>I'm now exploring multimodal model's capability with finer-grained discrete representations. 
-  </P>
+  <div class="en show">
+    <H2>Major Publications</H2>
+  </div>
+  <div class="zh">
+    <H2>主要论文</H2>
+  </div>
 
-
-  <H2>Major Publications</H2>
     <table class="pub_table">
-    <!-- <tbody> -->
-
       <tr>
         <td class="pub_td1"><img src="files/PaperFig/clawmachine-1.png" class="papericon"></td>
         <td 
@@ -70,7 +113,6 @@
           <br>
         </td>
       </tr>
-
 
       <tr>
         <td class="pub_td1"><img src="files/PaperFig/chatterbox.png" class="papericon"></td>
@@ -97,12 +139,26 @@
           <br>
         </td>
       </tr>
-
-    <!-- </tbody> -->
     </table>
 
-  <P style="font-size: 90%;"><em>   * indicates equal contribution.</em></P>
-    
+  <div class="en show">
+    <P style="font-size: 90%;"><em>   * indicates equal contribution.</em></P>
+  </div>
+  <div class="zh">
+    <P style="font-size: 90%;"><em>   * 表示作者贡献相同。</em></P>
+  </div>
 
+  <script>
+    let isEnglish = true;
+    function toggleLanguage() {
+      isEnglish = !isEnglish;
+      document.querySelectorAll('.en').forEach(el => {
+        el.classList.toggle('show');
+      });
+      document.querySelectorAll('.zh').forEach(el => {
+        el.classList.toggle('show');
+      });
+    }
+  </script>
 </BODY>
 </HTML>
